@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/madshall/node-blink.git"
+    "url": "git+https://github.com/madshall/node-blink-security.git"
   },
   "keywords": [
     "blink",
@@ -19,12 +19,12 @@
   "author": "Dmitry Ivanov <madshall.dev@gmail.com>",
   "license": {
     "type": "MIT",
-    "url": "https://github.com/madshall/node-blink/blob/master/LICENSE"
+    "url": "https://github.com/madshall/node-blink-security/blob/master/LICENSE"
   },
   "bugs": {
-    "url": "https://github.com/madshall/node-blink/issues"
+    "url": "https://github.com/madshall/node-blink-security/issues"
   },
-  "homepage": "https://github.com/madshall/node-blink#readme",
+  "homepage": "https://github.com/madshall/node-blink-security#readme",
   "engines": {
     "node": ">=7.7.3"
   },
