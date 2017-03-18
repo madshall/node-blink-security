@@ -3,7 +3,7 @@ This is a Node.js version of [this python library](https://github.com/fronzbot/b
   
 # Installation
 ```
-npm install node-blink
+npm install node-blink-security
 ```
 
 # Usage

@@ -1,5 +1,5 @@
 {
-  "name": "node-blink",
+  "name": "node-blink-security",
   "version": "1.0.0",
   "description": "A NodeJS module for the Blink Security Camera System",
   "main": "index.js",
