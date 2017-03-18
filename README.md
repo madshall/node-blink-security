@@ -52,6 +52,7 @@ class Blink
 * `blink.getLinks` - set access links and required headers for each camera in system; used for internal purposes
 * `blink.setupSystem` - logs in and sets auth token, urls, and ids for future requests
 * `blink.getIDs` - set the network ID and Account ID; used for internal purpose
+* `blink.getClients` - get information about devices that have connected to the system
 
 ```javascript
 class BlinkCamera
