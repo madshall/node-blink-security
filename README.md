@@ -7,7 +7,7 @@ npm install node-blink
 ```
 
 # Usage
-```
+```javascript
 const Blink = require('node-blink');
 
 var blink = new Blink('YOUR_EMAIL', 'YOUR_PASSWORD');
@@ -25,7 +25,7 @@ blink.setupSystem()
 
 # API
 
-```
+```javascript
 class Blink
 ```
 
@@ -53,7 +53,7 @@ class Blink
 * `blink.setupSystem` - logs in and sets auth token, urls, and ids for future requests
 * `blink.getIDs` - set the network ID and Account ID; used for internal purpose
 
-```
+```javascript
 class BlinkCamera
 ```
 
