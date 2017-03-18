@@ -1,4 +1,4 @@
-# node-blink
+# node-blink-security
 This is a Node.js version of [this python library](https://github.com/fronzbot/blinkpy). It allows to communicate with Blink Home Security System from a Node.js application.
   
 # Installation
