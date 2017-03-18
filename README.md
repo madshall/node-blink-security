@@ -8,7 +8,7 @@ npm install node-blink-security
 
 # Usage
 ```javascript
-const Blink = require('node-blink');
+const Blink = require('node-blink-security');
 
 var blink = new Blink('YOUR_EMAIL', 'YOUR_PASSWORD');
 blink.setupSystem()
