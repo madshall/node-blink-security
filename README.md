@@ -73,6 +73,7 @@ class BlinkCamera
 * `blinkCamera.arm_link` - link to arm camera
 * `blinkCamera.header` - request header
 * `blinkCamera.motion` - last motion event detail
+* `blinkCamera.updated_at` - last device update date
 
 ## Methods
 
