@@ -81,6 +81,7 @@ class BlinkCamera
 * `blinkCamera.setMotionDetect(boolean)` - set motion detection
 * `blinkCamera.update` - update camera information; internal use
 * `blinkCamera.imageRefresh` - refresh current thumbnail
+* `blinkCamera.fetchImageData` - get the image data for the camera's current thumbnail
 
 # License 
 MIT
