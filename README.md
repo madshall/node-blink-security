@@ -50,7 +50,7 @@ class Blink
 * `blink.setArmed(boolean)` - arm/disarm the system; `true` by default
 * `blink.getCameras` - find and creates cameras; used for internal purposes
 * `blink.getLinks` - set access links and required headers for each camera in system; used for internal purposes
-* `blink.setupSystem` - logs in and sets auth token, urls, and ids for future requests
+* `blink.setupSystem([system name or id])` - logs in and sets auth token, urls, and ids for future requests. Specify a system identifier if you have more than one system setup.
 * `blink.getIDs` - set the network ID and Account ID; used for internal purpose
 * `blink.getClients` - get information about devices that have connected to the system
 
@@ -81,6 +81,7 @@ class BlinkCamera
 * `blinkCamera.setMotionDetect(boolean)` - set motion detection
 * `blinkCamera.update` - update camera information; internal use
 * `blinkCamera.imageRefresh` - refresh current thumbnail
+* `blinkCamera.fetchImageData` - get the image data for the camera's current thumbnail
 
 # License 
 MIT
