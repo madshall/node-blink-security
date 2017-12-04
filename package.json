@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/madshall/node-blink-security#readme",
   "engines": {
-    "node": ">=7.7.3"
+    "node": ">=6.0.0"
   },
   "dependencies": {
     "request": "2.81.0"
