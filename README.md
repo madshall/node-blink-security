@@ -1,3 +1,11 @@
+![Build Status](https://img.shields.io/travis/madshall/node-blink-security.svg)
+![Downloads](https://img.shields.io/npm/dm/.svg)
+![Downloads](https://img.shields.io/npm/dt/node-blink-security.svg)
+![npm version](https://img.shields.io/npm/v/node-blink-security.svg)
+![dependencies](https://img.shields.io/david/madshall/node-blink-security.svg)
+![dev dependencies](https://img.shields.io/david/dev/madshall/node-blink-security.svg)
+![License](https://img.shields.io/npm/l/node-blink-security.svg)
+
 # node-blink-security
 This is a Node.js version of [this python library](https://github.com/fronzbot/blinkpy). It allows to communicate with Blink Home Security System from a Node.js application.
   

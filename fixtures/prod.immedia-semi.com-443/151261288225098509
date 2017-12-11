@@ -1,0 +1,16 @@
+POST /login
+accept: application/json
+
+HTTP/1.1 200 OK
+date: Thu, 07 Dec 2017 02:14:42 GMT
+content-type: application/json
+content-length: 147
+connection: close
+vary: Accept-Encoding
+status: 200 OK
+x-blink-served-by: i-08f556af90719384b
+x-content-type-options: nosniff
+x-powered-by: Phusion Passenger 5.0.30
+server: nginx/1.12.1 + Phusion Passenger 5.0.30
+
+{"authtoken":{"authtoken":"XXXXXOOOOOO","message":"auth"},"networks":{"100000":{"name":"TEST","onboarded":true}},"region":{"rest.prod":"United States"}}

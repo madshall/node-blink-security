@@ -1,0 +1,16 @@
+GET /networks
+accept: application/json
+
+HTTP/1.1 200 OK
+date: Thu, 07 Dec 2017 02:14:41 GMT
+content-type: application/json
+content-length: 651
+connection: close
+vary: Accept-Encoding
+status: 200 OK
+x-blink-served-by: i-08f556af90719384b
+x-content-type-options: nosniff
+x-powered-by: Phusion Passenger 5.0.30
+server: nginx/1.12.1 + Phusion Passenger 5.0.30
+
+{"summary":{"110000":{"name":"test","onboarded":true}},"networks":[{"id":110000,"created_at":"2017-01-00T05:00:22+00:00","updated_at":"2017-12-07T01:00:15+00:00","name":"test","network_key":null,"description":"","network_origin":"normal","locale":"","time_zone":"","dst":true,"ping_interval":60,"encryption_key":null,"armed":true,"autoarm_geo_enable":false,"autoarm_time_enable":false,"lv_mode":"relay","lfr_channel":0,"video_destination":"server","storage_used":0,"storage_total":0,"video_count":0,"video_history_count":4000,"arm_string":"Armed","busy":false,"camera_error":false,"sync_module_error":false,"feature_plan_id":null,"account_id":90000}]}

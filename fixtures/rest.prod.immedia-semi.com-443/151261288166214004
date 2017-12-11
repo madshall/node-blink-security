@@ -1,0 +1,16 @@
+GET /account/clients
+accept: application/json
+
+HTTP/1.1 200 OK
+date: Thu, 07 Dec 2017 02:14:41 GMT
+content-type: application/json
+content-length: 1249
+connection: close
+vary: Accept-Encoding
+status: 200 OK
+x-blink-served-by: i-0f1b91e6e94149a02
+x-content-type-options: nosniff
+x-powered-by: Phusion Passenger 5.0.30
+server: nginx/1.12.1 + Phusion Passenger 5.0.30
+
+{"clients":[{"id":2120000,"created_at":"2017-01-01T05:00:06+00:00","updated_at":"2017-08-01T13:08:00+00:00","name":"Test Device 6_0000000","notify_sound":null,"client_type":"android","client_specifier":"Test Device  | 7.1.2 | 1.9.11 (1987)","notification_key":"","aws_key":null,"os_version":"7.1.2","device_identifier":"LGE  5X","app_version":"1.9.11 (1987) #000000","unique_id":"0X00000000","home":null,"user_id":90000,"account_id":90000},{"id":2520000,"created_at":"2017-10-01T16:00:27+00:00","updated_at":"2017-12-01T01:00:10+00:00","name":"TEST DEVICE (5S) Plus","notify_sound":null,"client_type":"android","client_specifier":"TEST DEVICE (5S) Plus | 7.1.1 | 2.0.16 (241000) #19006f8e","notification_key":"","aws_key":null,"os_version":"7.1.1","device_identifier":"Test Device G (5S)","app_version":"2.0.16 (241000) #19006f8e","unique_id":"","home":null,"user_id":90000,"account_id":90000},{"id":2570000,"created_at":"2017-12-01T01:00:34+00:00","updated_at":"2017-12-01T01:00:34+00:00","name":"","notify_sound":null,"client_type":"ios","client_specifier":"iPhone 9.2 | 2.2 | 222","notification_key":"","aws_key":null,"os_version":null,"device_identifier":null,"app_version":null,"unique_id":null,"home":null,"user_id":90000,"account_id":90000}]}

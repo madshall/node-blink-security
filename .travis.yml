@@ -1,0 +1,25 @@
+language: node_js
+sudo: false
+node_js:
+- 8
+- 6
+env:
+  global:
+  - BLINK_AUTH_TOKEN: TEST_TOKEN
+  - BLINK_NETWORK_ID: 100000
+  - BLINK_REGION_ID: rest.prod
+cache:
+  yarn: true
+  directories:
+  - node_modules
+script:
+  - yarn test
+jobs:
+  include:
+    - stage: npm release
+      node_js: 8
+      deploy:
+        email: madshall.md@gmail.com
+        provider: npm
+        on:
+          tags: true

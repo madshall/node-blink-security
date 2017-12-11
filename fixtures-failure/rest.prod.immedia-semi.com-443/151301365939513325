@@ -1,0 +1,15 @@
+GET /networks
+accept: application/json
+
+HTTP/1.1 401 Unauthorized
+date: Mon, 11 Dec 2017 17:34:16 GMT
+content-type: application/json
+content-length: 44
+connection: close
+status: 401 Unauthorized
+x-blink-served-by: i-0777c7c59198751c3
+x-content-type-options: nosniff
+x-powered-by: Phusion Passenger 5.0.30
+server: nginx/1.12.1 + Phusion Passenger 5.0.30
+
+{"message":"Unauthorized Access","code":101}

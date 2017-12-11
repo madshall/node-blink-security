@@ -1,0 +1,16 @@
+GET /network/110000/homescreen
+accept: application/json
+
+HTTP/1.1 200 OK
+date: Thu, 07 Dec 2017 02:14:42 GMT
+content-type: application/json
+content-length: 1591
+connection: close
+vary: Accept-Encoding
+status: 200 OK
+x-blink-served-by: i-08f556af90719384b
+x-content-type-options: nosniff
+x-powered-by: Phusion Passenger 5.0.30
+server: nginx/1.12.1 + Phusion Passenger 5.0.30
+
+{"account":{"notifications":1},"network":{"name":"test","wifi_strength":5,"status":"ok","armed":true,"notifications":1,"warning":0,"enable_temp_alerts":true,"error_msg":""},"devices":[{"device_type":"camera","device_id":345000,"updated_at":"2017-12-01T01:00:11+00:00","name":"test","thumbnail":"/media/production/account/90000/network/110000/camera/345000/clip_","active":"armed","notifications":1,"warning":0,"error_msg":"","status":"done","enabled":true,"armed":true,"errors":0,"wifi_strength":3,"lfr_strength":2,"temp":73,"battery":3,"battery_state":"ok","usage_rate":false},{"device_type":"camera","device_id":345000,"updated_at":"2017-12-01T00:00:11+00:00","name":"Test Porch","thumbnail":"/media/production/account/90000/network/11000/camera/345000/clip_PM","active":"disabled","notifications":1,"warning":0,"error_msg":"","status":"done","enabled":false,"armed":true,"errors":0,"wifi_strength":5,"lfr_strength":4,"temp":69,"battery":3,"battery_state":"ok","usage_rate":false},{"device_type":"camera","device_id":345000,"updated_at":"2017-12-01T21:00:10+00:00","name":"Test Test","thumbnail":"/media/production/account/90000/network/110000/camera/345000/clip_PM","active":"disabled","notifications":1,"warning":0,"error_msg":"","status":"done","enabled":false,"armed":true,"errors":0,"wifi_strength":5,"lfr_strength":5,"temp":73,"battery":3,"battery_state":"ok","usage_rate":false},{"device_type":"sync_module","device_id":259000,"updated_at":"2017-00-04T20:00:31+00:00","notifications":0,"warning":0,"error_msg":"","status":"online","errors":0,"last_hb":"2017-01-01T01:14:38+00:00"}]}

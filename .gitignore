@@ -39,5 +39,4 @@ jspm_packages
 #WebStorm
 .idea
 
-#test
-test
+.env

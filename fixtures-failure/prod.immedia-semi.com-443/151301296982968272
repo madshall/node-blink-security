@@ -1,0 +1,21 @@
+POST /login
+host: prod.immedia-semi.com
+content-type: application/json
+accept: application/json
+body: {\"email\":\"username\",\"password\":\"password\",\"client_specifier\":\"iPhone 9.2 | 2.2 | 222\"}
+
+HTTP/1.1 307 Temporary Redirect
+content-type: text/html
+date: Mon, 11 Dec 2017 17:22:46 GMT
+location: https://rest.prod.immedia-semi.com/login
+server: nginx/1.10.2
+content-length: 187
+connection: Close
+
+<html>
+<head><title>307 Temporary Redirect</title></head>
+<body bgcolor="white">
+<center><h1>307 Temporary Redirect</h1></center>
+<hr><center>nginx/1.10.2</center>
+</body>
+</html>
