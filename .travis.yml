@@ -12,10 +12,12 @@ cache:
   yarn: true
   directories:
   - node_modules
+script:
+  - yarn test
 jobs:
   include:
     - stage: npm release
-      node_js: stable
+      node_js: 8
       deploy:
         email: madshall.md@gmail.com
         provider: npm
