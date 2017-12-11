@@ -40,3 +40,5 @@ jspm_packages
 .idea
 
 .env
+
+/test/test.js
