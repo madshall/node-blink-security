@@ -45,7 +45,7 @@ describe('Password Login', () => {
   });
 });
 
-describe('failed login', () => {
+describe.skip('failed login', () => {
   let blink;
   before(() => {
     replay.fixtures = './fixtures-failure/';
