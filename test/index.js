@@ -4,8 +4,9 @@ var chai = require('chai');
 chai.use(require('chai-http'));
 chai.use(require('chai-as-promised'));
 chai.should();
-require('replay');
-var Blink = require('../index.js');
+var replay = require('replay')
+  , Blink = require('../index.js')
+  , debug = require('debug')('test:index');
 
 describe('Auth Token Login', () => {
   let blink;
@@ -41,5 +42,28 @@ describe('Password Login', () => {
   });
   it('should setupSystem properly', () => {
     return blink.should.have.deep.property('_cameras');
+  });
+});
+
+describe('failed login', () => {
+  let blink;
+  before(() => {
+    replay.fixtures = './fixtures-failure/';
+    debug('replay.fixtures:', replay.fixtures);
+    blink = new Blink('', '', {
+      _token: process.env.BLINK_AUTH_TOKEN,
+      _region_id: process.env.BLINK_REGION_ID,
+      _network_id:process.env.BLINK_NETWORK_ID}
+    );
+    return blink.setupSystem().should.be.rejected;
+  });
+  after(() => {
+    blink = null;
+  });
+  it('should should reject due to failure', () => {
+    return blink.getClients().should.be.rejected;
+  });
+  it('getIDs should reject', () => {
+    return blink.getIDs().should.be.rejectedWith('Can\'t retrieve system status');
   });
 });
