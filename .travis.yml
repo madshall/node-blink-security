@@ -12,8 +12,12 @@ cache:
   yarn: true
   directories:
   - node_modules
-deploy:
-  email: tonym@tonym.us
-  provider: npm
-  on:
-    tags: true
+jobs:
+  include:
+    - stage: npm release
+      node_js: stable
+      deploy:
+        email: madshall.md@gmail.com
+        provider: npm
+        on:
+          tags: true
