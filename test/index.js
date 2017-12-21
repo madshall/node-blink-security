@@ -45,7 +45,7 @@ describe('Password Login', () => {
   });
 });
 
-describe.skip('expired auth token', () => {
+describe('expired auth token', () => {
   let blink;
   before(() => {
     replay.fixtures = './fixtures-failure/';
