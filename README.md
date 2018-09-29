@@ -51,6 +51,7 @@ class Blink
 * `blink.refresh` - get all blink cameras and pulls their most recent status
 * `blink.getSummary` - get a full summary of device information
 * `blink.getCameraThumbs` - refresh all cameras thumbnails
+* `blink.getVideos` - get metadata for the last 10 videos recorded
 * `blink.getEvents` - get all events from Blink server (e.g. heartbeats, motion...)
 * `blink.isOnline` - return boolean system online status
 * `blink.getLastMotions` - refresh motion events data
