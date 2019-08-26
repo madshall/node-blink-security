@@ -27,8 +27,10 @@ describe('Auth Token Login', () => {
 
 describe('Password Login', () => {
   let blink;
+  const username = process.env.BLINK_USERNAME || 'username';
+  const password = process.env.BLINK_PASSWORD || 'password';
   before(() => {
-    blink = new Blink('username', 'password');
+    blink = new Blink(username, password);
     return blink.setupSystem().should.be.fulfilled;
   });
   after(() => {
@@ -38,6 +40,9 @@ describe('Password Login', () => {
     return blink.getClients().should.eventually.have.deep.property('clients');
   });
   it('should get cameras', () => {
+    blink.getIDs().then(_ => {
+      console.log(blink.networks);
+    })
     return blink.getIDs().should.eventually.have.deep.property('_cameras');
   });
   it('should setupSystem properly', () => {

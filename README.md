@@ -41,7 +41,7 @@ class Blink
 
 * `blink.cameras` - the information about all available cameras
 * `blink.idTable` - `{cameraId:cameraName}` map for further references
-* `blink.networkId` - network id
+* `blink.networks` - map of configured networks (sync modules)
 * `blink.accountId` - account id
 * `blink.region` - region (e.g. `prod`)
 * `blink.regionId` - region (e.g. `United States`)
@@ -49,18 +49,18 @@ class Blink
 ## Methods
 
 * `blink.refresh` - get all blink cameras and pulls their most recent status
-* `blink.getSummary` - get a full summary of device information
+* `blink.getSummary` - get a full summary of system information, broken down by sync module
 * `blink.getCameraThumbs` - refresh all cameras thumbnails
 * `blink.getVideos` - get metadata for the last 10 videos recorded
-* `blink.getEvents` - get all events from Blink server (e.g. heartbeats, motion...)
-* `blink.isOnline` - return boolean system online status
+* `blink.getEvents` - get all events from Blink server (e.g. heartbeats, motion...), by sync module
+* `blink.isOnline` - return boolean system online status, by sync module
 * `blink.getLastMotions` - refresh motion events data
-* `blink.isArmed` - return boolean status of sync module: armed(true)/disarmed(false).
-* `blink.setArmed(boolean)` - arm/disarm the system; `true` by default
+* `blink.isArmed()` - return boolean statuses of all sync modules: armed(true)/disarmed(false).
+* `blink.setArmed(boolean, [networkIds])` - arm/disarm the system/specific set of sync modules; `true` by default
 * `blink.getCameras` - find and creates cameras; used for internal purposes
 * `blink.getLinks` - set access links and required headers for each camera in system; used for internal purposes
 * `blink.setupSystem([system name or id])` - logs in and sets auth token, urls, and ids for future requests. Specify a system identifier if you have more than one system setup.
-* `blink.getIDs` - set the network ID and Account ID; used for internal purpose
+* `blink.getIDs` - set the network IDs and Account ID; used for internal purpose
 * `blink.getClients` - get information about devices that have connected to the system
 
 ```javascript
@@ -83,6 +83,7 @@ class BlinkCamera
 * `blinkCamera.header` - request header
 * `blinkCamera.motion` - last motion event detail
 * `blinkCamera.updated_at` - last device update date
+* `blinkCamera.networkId` - last device update date
 
 ## Methods
 
@@ -94,3 +95,6 @@ class BlinkCamera
 
 # License 
 MIT
+
+# This is awesome!
+If you find this package helpful you can buy me a beer [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=U4M9U63LEHZGJ&lc=US&item_name=Thank%20you&currency_code=USD)

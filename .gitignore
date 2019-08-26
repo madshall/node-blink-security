@@ -44,5 +44,6 @@ jspm_packages
 /test/test.js
 /fixtures/*
 /fixtures-failure/*
+test.js
 
 package-lock.json
