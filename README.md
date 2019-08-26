@@ -83,7 +83,7 @@ class BlinkCamera
 * `blinkCamera.header` - request header
 * `blinkCamera.motion` - last motion event detail
 * `blinkCamera.updated_at` - last device update date
-* `blinkCamera.networkId` - last device update date
+* `blinkCamera.network_id` - camera's assigned sync module id (network id)
 
 ## Methods
 
