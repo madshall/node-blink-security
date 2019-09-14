@@ -47,3 +47,4 @@ jspm_packages
 test.js
 
 package-lock.json
+yarn.lock

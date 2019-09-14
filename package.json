@@ -1,6 +1,6 @@
 {
   "name": "node-blink-security",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "description": "A NodeJS module for the Blink Security Camera System",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,7 @@
     "node": ">=6.0.0"
   },
   "dependencies": {
-    "request": "2.88.0"
+    "request": "2.88.1"
   },
   "devDependencies": {
     "chai": "^4.1.2",
