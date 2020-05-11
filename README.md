@@ -15,10 +15,11 @@ npm install node-blink-security
 ```
 
 # Usage
+
 ```javascript
 const Blink = require('node-blink-security');
 
-var blink = new Blink('YOUR_EMAIL', 'YOUR_PASSWORD');
+var blink = new Blink('YOUR_EMAIL', 'YOUR_PASSWORD', 'DEVICE_ID');
 blink.setupSystem()
   .then(() => {
     blink.setArmed()
@@ -36,6 +37,15 @@ blink.setupSystem()
 ```javascript
 class Blink
 ```
+
+## Constructor
+* `email` - your Blink account email
+* `password` - your Blink account password
+* `deviceId` - identifies your device and registers it in your account. It's required since version 4.0.0 of this package as this is when Blink switched to 2-factor authentication flow. The value is provided by you and it should let you identify the device correctly when you receive a verification email from Blink.
+* `options`
+* * `auth_2FA: false` - set to `true` if you want to receive verification code for each login, otherwise you'll receive verification email only once for the first time and after that the device will be remembered by Blink.
+* * `verification_timeout: 60000` - number of milliseconds to wait for email verification until retrying account login
+* * `device_name: "node-blink-security"` - this name appears in verification email along with your `deviceId`
 
 ## Properties
 
