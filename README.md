@@ -102,6 +102,7 @@ class BlinkCamera
 * `blinkCamera.update` - update camera information; internal use
 * `blinkCamera.imageRefresh` - refresh current thumbnail
 * `blinkCamera.fetchImageData` - get the image data for the camera's current thumbnail
+* `blinkCamera.recordClip` - record video clip from the camera
 
 # License 
 MIT
