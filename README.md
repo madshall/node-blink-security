@@ -8,7 +8,7 @@
 
 # node-blink-security
 This is a Node.js version of [this python library](https://github.com/fronzbot/blinkpy). It allows to communicate with Blink Home Security System from a Node.js application.
-  
+
 # Installation
 ```
 npm install node-blink-security
@@ -97,6 +97,7 @@ class BlinkCamera
 
 ## Methods
 
+* `blinkCamera.getStatus` - get current status
 * `blinkCamera.snapPicture` - take a picture with camera to create a new thumbnail
 * `blinkCamera.setMotionDetect(boolean)` - set motion detection
 * `blinkCamera.update` - update camera information; internal use
@@ -104,7 +105,7 @@ class BlinkCamera
 * `blinkCamera.fetchImageData` - get the image data for the camera's current thumbnail
 * `blinkCamera.recordClip` - record video clip from the camera
 
-# License 
+# License
 MIT
 
 # This is awesome!
